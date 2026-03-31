@@ -19,7 +19,7 @@ my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT
 
 pd_df=pd.DataFrame()
 pd_sf = my_dataframe.to_pandas()
-#st.dataframe(pd_df)
+st.dataframe(pd_df)
 
 name = st.text_input('Name on Smoothie')
 st.write(name)
